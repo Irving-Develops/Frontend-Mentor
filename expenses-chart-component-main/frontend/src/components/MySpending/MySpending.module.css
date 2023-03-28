@@ -1,9 +1,27 @@
 .container {
     width: 450;
-    height: 520px;
+    height: 350px;
     background-color: white;
     border-radius: 20px;
     padding: 25px;
+}
+
+.text {
+    font-size: 14px;
+    color:#ada89f;
+    margin: 0;
+    padding: 0;
+
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .title {
@@ -11,13 +29,18 @@
     margin: 0;
     padding: 0;
     text-align: left;
+    color:#392316;
+    font-weight: bold;
 }
 
 .days {
     display: flex;
     justify-content: space-around;
     gap: 15px;
+    padding: 20px 0;
+    margin-bottom: 20px;
     height: 200px;
+    border-bottom: 1px solid #f7eadd;
 }
 .graph {
     display: flex;
@@ -25,19 +48,26 @@
     width: 40px;
     /* justify-content: space-between; */
     justify-content: end;
+    /* position: relative; */
     /* align-items: center; */
 }
 .amountSpent {
     width: 50px;
     background-color: #392316;
+    border-radius: 5px;
     padding: 5px;
+    font-size: 14px;
     color: white;
+    position: absolute;
+    top: -40px;
+    left: -10px;
 }
 
 .redGraphBar {
     border-radius: 5px;
     background-color: var(--primary-color);
     transition: background-color 0.3s ease-in-out;
+    position: relative;
 }
 .redGraphBar:hover {
     border-radius: 5px;
@@ -46,7 +76,8 @@
 .greenGraphBar {
     border-radius: 5px;
     background-color: #76b5bb;
-        transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
 }
 .greenGraphBar:hover {
     background-color: #b4dfe5;
@@ -59,3 +90,8 @@
     background-color: red;
 }
 /* height: `1/${total/2/day.amount}px`, */
+.cardBottom {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
