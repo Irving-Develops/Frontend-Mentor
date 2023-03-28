@@ -3,4 +3,59 @@
     height: 520px;
     background-color: white;
     border-radius: 20px;
+    padding: 25px;
 }
+
+.title {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.days {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    height: 200px;
+}
+.graph {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    /* justify-content: space-between; */
+    justify-content: end;
+    /* align-items: center; */
+}
+.amountSpent {
+    width: 50px;
+    background-color: #392316;
+    padding: 5px;
+    color: white;
+}
+
+.redGraphBar {
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease-in-out;
+}
+.redGraphBar:hover {
+    border-radius: 5px;
+    background-color: #ff9b87;
+}
+.greenGraphBar {
+    border-radius: 5px;
+    background-color: #76b5bb;
+        transition: background-color 0.3s ease-in-out;
+}
+.greenGraphBar:hover {
+    background-color: #b4dfe5;
+}
+.graph > p {
+    height: 10px;
+}
+
+.test {
+    background-color: red;
+}
+/* height: `1/${total/2/day.amount}px`, */
