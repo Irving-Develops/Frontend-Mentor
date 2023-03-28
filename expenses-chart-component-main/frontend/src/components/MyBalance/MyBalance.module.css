@@ -1,0 +1,25 @@
+@import '../../vars.css';
+
+
+
+.container {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    width: 400px;
+    height: 90px;
+    border-radius: 10px;
+    color: white;
+}
+.group > p{
+    margin: 5px;
+}
+.balance {
+    font-size: 2rem;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
