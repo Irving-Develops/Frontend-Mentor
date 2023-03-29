@@ -9,8 +9,9 @@ export default function MySpending() {
 
     const [activeIndex, setActiveIndex] = useState(false)
 
+
     const handleClick = (index) => {
-        setActiveIndex(index === activeIndex ? null : index)
+        setActiveIndex(index === activeIndex ? false : index)
     }
 
     return (
