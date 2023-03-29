@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App max-w-screen w-screen p-0 flex justify-center">
       <ContactForm />
     </div>
   )
