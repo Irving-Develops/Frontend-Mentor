@@ -1,19 +1,15 @@
 import React, {useState, useRef, useEffect, useContext} from "react";
 import {LanguageContext} from "../../Contexts/LanguageContext"
 import languageData from "../../Data/languageData"
-import styles from "./ContactForm.module.css";
 import emailjs from '@emailjs/browser'
 
 export default function ContactForm() {
     const form = useRef();
     const [hasSubmitted, setHasSubmitted] = useState(false);
     const {language} = useContext(LanguageContext)
-    console.log(languageData[language])
 
-    useEffect(() => {
 
-    }, [])
-
+    
     const handleSubmission = (e) => {
         e.preventDefault();
 
@@ -30,25 +26,26 @@ export default function ContactForm() {
     }
 
     return (
-        <form ref={form} onSubmit={handleSubmission} className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 text-left">
+        <form ref={form} onSubmit={handleSubmission} className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 text-left text-primary">
             <h1 className="text-3xl font-bold mb-4">{languageData[language].formTitle}</h1>
             <div className="mb-4">
-                <label htmlFor="first_name" className="block font-medium mb-1">{languageData[language].firstName}</label>
-                <input type="text" name="first_name" id="first_name" className="w-full md:inline px-4 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" required />
+                <label htmlFor="first_name" className="block font-medium mb-1 text-primary">{languageData[language].firstName}</label>
+                <input type="text" name="first_name" id="first_name" className="w-full md:inline px-4 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondaryGold" required 
+                />
             </div>
             <div className="mb-4">
-                <label htmlFor="last_name" className="block font-medium mb-1">{languageData[language].lastName}</label>
-                <input type="text" name="last_name" id="last_name" className="w-full px-4 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" required />
+                <label htmlFor="last_name" className="block font-medium mb-1 text-primary">{languageData[language].lastName}</label>
+                <input type="text" name="last_name" id="last_name" className="w-full px-4 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondaryGold" required lang={language}/>
             </div>
             <div className="mb-4">
-                <label htmlFor="email" className="block font-medium mb-1">{languageData[language].email}</label>
-                <input type="email" name="email" id="email" className="w-full px-4 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" required />
+                <label htmlFor="email" className="block font-medium mb-1 text-primary">{languageData[language].email}</label>
+                <input type="email" name="email" id="email" className="w-full px-4 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondaryGold" required lang={language} />
             </div>
             <div className="mb-4">
-                <label htmlFor="message" className="block font-medium mb-1">{languageData[language].message}</label>
-                <textarea name="message" id="message" rows="4" className="w-full px-4 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" required ></textarea>
+                <label htmlFor="message" className="block font-medium mb-1 text-primary">{languageData[language].message}</label>
+                <textarea name="message" id="message" rows="4" className="w-full px-4 py-2 border border-gray-400 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondaryGold" required lang={language} ></textarea>
             </div>
-            <button type="submit" className="w-full bg-indigo-500 text-white font-medium py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">{languageData[language].submit}</button>
+            <button type="submit" className="w-full bg-primaryGold text-white font-medium py-2 px-4 rounded-md hover:bg-secondaryGold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondaryGold">{languageData[language].submit}</button>
             {hasSubmitted && <p className="mt-2 text-sm text-gray-500">{languageData[language].successMessage}</p>}
         </form>
 

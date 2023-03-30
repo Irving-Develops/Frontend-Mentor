@@ -8,7 +8,9 @@
     "message": "Message",
     "submitButton": "Submit",
     "successMessage": "Thanks for submitting!",
-    "submit": "Submit"
+    "submit": "Submit",
+    "inputError": "Please fill out this field",
+    "emailError": "Please enter a valid email address."
   },
   "es": {
     "language": "Idioma",
@@ -19,6 +21,7 @@
     "message": "Mensaje",
     "submitButton": "Enviar",
     "successMessage": "¡Gracias por enviar tu mensaje!",
-    "submit": "Enviar"
+    "submit": "Enviar",
+    "inputError": "Por favor llena este campo."
   }
 }

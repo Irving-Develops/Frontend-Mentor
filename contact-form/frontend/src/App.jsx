@@ -6,7 +6,7 @@ import './App.css'
 function App() {
 
   return (
-    <div className="App max-w-screen w-screen p-0 flex flex-col justify-center">
+    <div className="Appw-screen p-0 flex flex-col justify-center">
       <SetLanguage />
       <ContactForm />
     </div>
