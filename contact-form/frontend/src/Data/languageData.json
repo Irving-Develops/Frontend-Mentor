@@ -1,0 +1,24 @@
+{
+  "en": {
+    "language": "Language",
+    "formTitle": "Get In Touch",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "message": "Message",
+    "submitButton": "Submit",
+    "successMessage": "Thanks for submitting!",
+    "submit": "Submit"
+  },
+  "es": {
+    "language": "Idioma",
+    "formTitle": "Contáctanos",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo Electrónico",
+    "message": "Mensaje",
+    "submitButton": "Enviar",
+    "successMessage": "¡Gracias por enviar tu mensaje!",
+    "submit": "Enviar"
+  }
+}
