@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
+        'primaryDark': '#1D1D1D',
         'primaryGold': '#D3A03C',
         'secondaryGold': '#B8860B',
       }, 
@@ -15,7 +16,8 @@ export default {
         'secondaryGold': '#B8860B',
       },
       textColor: {
-        'primary': '#1D1D1D'
+        'primaryText': '#1D1D1D',
+        'secondaryText': '#D3A03C',
       }
     },
   },

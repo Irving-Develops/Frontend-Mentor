@@ -3,7 +3,7 @@ import {LanguageContext} from "../../Contexts/LanguageContext"
 import LanguageData from "../../Data/languageData"
 
 
-function SetLanguage() {
+export default function SetLanguage() {
     const {language, toggleLanguage} = useContext(LanguageContext)
 
     return (
@@ -13,5 +13,3 @@ function SetLanguage() {
         </div>
     )
 }
-
-export default SetLanguage
