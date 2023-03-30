@@ -1,4 +1,6 @@
 
+const navLinks = ["Home", "About", "Contact", "Parents", "Puppies", "More"];
+
 export default function Navbar() {
     return (
         <nav className="flex justify-between items-center h-16 text-black relative shadow-sm font-mono bg-primaryDark" role="navigation">
@@ -9,16 +11,23 @@ export default function Navbar() {
                 </svg>  
             </div>
             <div className="pr-8 md:block hidden text-secondaryText">
-                <a href="/" className="p-4">Home</a>
-                <a href="/" className="p-4">About</a>
-                <a href="/" className="p-4">Contact</a>
-                <a href="/" className="p-4">Parents</a>   
-                <a href="/" className="p-4">Puppies</a>   
-                <a href="/" className="p-4 group">More</a>
-                <div className="hidden group-hover:block">
-                    <a href="/" className="p-4">Breed Information</a>   
-                    <a href="/" className="p-4">Gallery</a>   
-                </div>
+                <ul>
+                    {navLinks.map((link, index) => (
+                        (link === "More" ? 
+                            <li className="inline" key={index}>
+                                <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-secondaryText hover:text-white mr-4 group">
+                                    {link}
+                                    <div class="absolute z-10 hidden group-hover:block bg-gray-800 rounded-md py-2 mt-2">
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:text-white">Gallery</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:text-white">Breed Info</a>
+                                    </div>
+                                </a>
+                            </li>
+                            :
+                            <li className="inline" key={index}><a className="p-4" href={`/${link}`}>{link}</a></li>
+                        )
+                        ))}
+                </ul>
             </div>
         </nav>
     )
