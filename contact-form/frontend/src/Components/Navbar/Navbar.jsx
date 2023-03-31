@@ -6,7 +6,7 @@ import styles from "./Navbar.module.css";
 
 export default function Navbar() {
     const navLinks = ["Home", "About", "Contact", "Parents", "Puppies", "More"];
-    const sidepanelLinks = ["Home", "About", "Contact", "Parents", "Puppies", "Gallery", "Breed Info"]
+    const sidepanelLinks = ["Home", "About", "Contact", "Parents", "Puppies", "Gallery", "Breed Info", "Language"]
 
     const [open, setOpen] = useState(false);
 
@@ -48,8 +48,8 @@ export default function Navbar() {
                                 <NavLink to="#" className="">
                                     {link}
                                     <div className="">
-                                    <NavLink to="#" className="">Gallery</NavLink>
-                                    <NavLink to="#" className="">Breed Info</NavLink>
+                                    <span to="#" className="">Gallery</span>
+                                    <span to="#" className="">Breed Info</span>
                                     <SetLanguage />
                                     </div>
                                 </NavLink>
