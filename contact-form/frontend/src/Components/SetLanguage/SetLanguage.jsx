@@ -8,8 +8,7 @@ export default function SetLanguage() {
 
     return (
         <div>
-            <label className="mr-5">{LanguageData[language].language}</label>
-             <button className="border rounded-sm border-gray-500" onClick={toggleLanguage}>{language}</button>
+             <button className="border rounded-sm border-gray-500" onClick={toggleLanguage}>{LanguageData[language].language} {language}</button>
         </div>
     )
 }

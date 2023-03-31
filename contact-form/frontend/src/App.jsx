@@ -7,7 +7,7 @@ import './App.css'
 function App() {
 
   return (
-    <div className="Appw-screen p-0 flex flex-col justify-center">
+    <div className="App w-screen p-0 flex flex-col justify-center">
       <Navbar />
       <SetLanguage />
       <ContactForm />
