@@ -5,19 +5,16 @@ import SetLanguage from './Components/SetLanguage/SetLanguage'
 import Navbar from './Components/Navbar/Navbar'
 import './App.css'
 import Hero from './Components/Hero/Hero'
+import Home from './Components/Home/Home'
 
 function App() {
   return (
     <div className="App w-screen p-0 flex flex-col justify-center">
       <Routes>
         <Route path="/" element={
-        <>
-          <Navbar />
-          <Hero />
-          <SetLanguage />
-          <ContactForm />
-        </>
-      } />
+          <Home />
+        }>
+        </Route>
       </Routes>
     </div>
   )

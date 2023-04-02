@@ -1,0 +1,29 @@
+/* .overlay {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    opacity: 50%;
+} */
+
+/* .header {
+    position: absolute;
+    z-index: 1001;
+    top: 30%;
+    left: 0;
+    font-size: 2rem;
+    color: white;
+    opacity: 100%;
+} */
+
+.image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* change the alpha value (0.5 in this case) to adjust the opacity of the overlay */
+  z-index: 1;
+}

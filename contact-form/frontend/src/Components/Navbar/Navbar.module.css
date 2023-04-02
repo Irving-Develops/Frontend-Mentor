@@ -50,6 +50,7 @@
 }
 
 .modalContent {
+z-index: 1005;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
