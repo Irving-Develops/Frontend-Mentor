@@ -9,7 +9,7 @@ import Home from './Components/Home/Home'
 
 function App() {
   return (
-    <div className="App w-screen p-0 flex flex-col justify-center">
+    <div className="App relative w-screen min-h-screen p-0 flex flex-col justify-center">
       <Routes>
         <Route path="/" element={
           <Home />

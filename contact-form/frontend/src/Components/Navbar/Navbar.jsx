@@ -17,7 +17,7 @@ export default function Navbar() {
 
 
     return (
-        <nav className="flex justify-between items-center px-8 bg-primaryDark text-white h-20 shadow-md md:h-32" role="navigation">
+        <nav className="fixed top-0 z-30 flex justify-between items-center px-8 bg-primaryDark text-white h-20  md:h-24 w-screen" role="navigation">
             <NavLink to="/" className="">Logo</NavLink>
             <div className="md:hidden block">
                 <svg onClick={handleClick} className="w-6 h-6" fill="none" stroke="#D3A03C" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">              
@@ -41,13 +41,13 @@ export default function Navbar() {
             </div>
 
             <div className="hidden md:block h">
-                <ul className="flex ">
+                <ul className="flex gap-4">
                     {navLinks.map((link, index) => (
                         (link === "More" ? 
                             <li className="" key={index}>
                                 <NavLink to="#" className="">
                                     {link}
-                                    <div className="">
+                                    <div className="hidden">
                                     <span to="#" className="">Gallery</span>
                                     <span to="#" className="">Breed Info</span>
                                     <SetLanguage />
