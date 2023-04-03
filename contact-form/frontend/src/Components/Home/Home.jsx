@@ -5,11 +5,11 @@ import About from "../About/About"
 
 export default function Home() {
     return (
-        <>
+        <div className="flex flex-col">
             <Navbar />
             <Hero />
             <About />
             <ContactForm />
-        </>
+        </div>
     )
 }
