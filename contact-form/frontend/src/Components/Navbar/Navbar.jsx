@@ -17,7 +17,7 @@ export default function Navbar() {
 
 
     return (
-        <nav className="fixed top-0 z-30 flex justify-between items-center px-8 bg-primaryDark text-white h-20  md:h-24 w-screen" role="navigation">
+        <nav className="fixed top-0 z-30 flex justify-between items-center px-8 bg-darkGrey text-white h-20  md:h-24 w-screen" role="navigation">
             <NavLink to="/" className="">Logo</NavLink>
             <div className="md:hidden block">
                 <svg onClick={handleClick} className="w-6 h-6" fill="none" stroke="#D3A03C" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">              

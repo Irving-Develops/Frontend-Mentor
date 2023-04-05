@@ -1,26 +1,39 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-  "./index.html",
-  "./src/**/*.{js,ts,jsx,tsx}"
-  ,],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundColor: {
-        'primaryDark': '#1D1D1D',
-        'primaryGold': '#D3A03C',
-        'secondaryGold': '#B8860B',
-      }, 
+      silver: {
+        darkGrey: "#1D1D1D",
+        gold: "#D3A03C",
+        darkGold: "#B8860B",
+        silver: "#F5F5F5",
+        taupe: "#D2B48C",
+        softGreen: "#98FB98",
+      },
       colors: {
-        'primaryGold': '#D3A03C',
-        'secondaryGold': '#B8860B',
+        // gold: "#D3A03C",
+        // darkGold: "#B8860B",
+
+        darkGrey: "#1D1D1D",
+        gold: "#D3A03C",
+        darkGold: "#B8860B",
+        silver: "#F5F5F5",
+        taupe: "#D2B48C",
+        softGreen: "#98FB98",
       },
       textColor: {
-        'primaryText': '#1D1D1D',
-        'secondaryText': '#D3A03C',
-      }
+        darkGrey: "#1D1D1D",
+        gold: "#D3A03C",
+        darkGold: "#B8860B",
+        silver: "#F5F5F5",
+        taupe: "#D2B48C",
+        softGreen: "#98FB98",
+        // darkGrey: "#1D1D1D",
+        // gold: "#D3A03C",
+      },
     },
   },
   plugins: [],
-}
+};
 
