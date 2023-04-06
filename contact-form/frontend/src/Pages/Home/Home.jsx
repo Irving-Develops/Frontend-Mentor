@@ -1,7 +1,7 @@
-import {Navbar} from "../"
-import {Hero} from "../"
-import {ContactForm} from "../"
-import {About} from "../"
+import {Navbar} from ".."
+import {Hero} from ".."
+import {ContactForm} from ".."
+import {About} from ".."
 // import Gallery from "../ImageGallery/ImageGallery"
 
 export default function Home() {
